@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+$unnamed-color-272b90 : #272B90;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #ffffff;
+}
+
+$unnamed-color-272b90: #272B90;
+$blue-bright: #006AB0;
+$blue-mixed: #384198;
+
+$yellow: #FFE86E;
+$white-white: #FFFFFF;
+$grey-green: #707070CC;
+$grey-grey: #818181CC;
+$white-grey: #D7D6E3;
+$white-grey2: #D6D4EC;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #ffffff;
+}
+
+
+header {
+  padding-top: clamp(2rem, 3rem, 2vw);
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+  flex-wrap: wrap;
+
+  .logo {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0px;
+    overflow: wrap;
+
+
+    img {
+
+      width: 20vw;
+      min-width: 5rem;
+      max-width: 166px;
+      aspect-ratio: 1;
+
+    }
+  }
+
+  .nav-bar {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: inherit;
+      padding: 0em 1em;
+      letter-spacing: -0.38px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      height: fit-content
+    }
+
+    .search {
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $unnamed-color-272b90;
+      border-radius: 50%;
+      border: none;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+
+    }
+  }
+}
+
+.slides {
+  background: linear-gradient(rgba(0, 130, 170, 0), rgb(0, 0, 0)), url('./assets/slideshow-1.png');
+  min-height: 40em;
+  max-height: 800px;
+  height: 100vw;
+  width: 100vw;
+  z-index: -1;
+  background-size: cover;
+  background-position: 70%;
+  position: relative;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: -45px;
+    font-family: "Satisfy";
+    font-size: clamp(30px, 76px, 7vw);
+    text-align: center;
+    color: white;
+
+  }
+}
+
+
+.arrow {
+  color: white;
+  background-color: $unnamed-color-272b90;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
