@@ -5,6 +5,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'images/[hash][ext][query]'
   },
   module: {
     rules: [
@@ -13,11 +14,23 @@ module.exports = {
         use: [
           // Creates `style` nodes from JS strings
           "style-loader",
-          // Translates CSS into CommonJS
-          "css-loader",
-          // Compiles Sass to CSS
-          "sass-loader",
+          {
+            loader: 'css-loader',
+          }, {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true, // <-- !!IMPORTANT!!
+            }
+          }
+          
         ],
+      },
+      {
+        test: /\.(png)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'src/assets/[name][ext][query]'
+        }
       },
     ],
   },
