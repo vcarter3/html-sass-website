@@ -3,7 +3,7 @@ One page Website (HTML Sass practice)
 
 ## One page School website
 
-#### 🧪 [Live Demo]()
+#### 🧪 [Live Demo](https://vcarter3.github.io/school-website/)
 
 
 #### 🔔  Features
