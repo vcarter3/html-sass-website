@@ -6,19 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School</title>
-    <script src="bundle.js"></script>
-    <link rel="icon" type="image/x-icon" href="../src/assets/logo.png">
+    <script src="bundle.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="./src/assets/logo.png">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="../src/assets/logo.png" />
+            <img src="./src/assets/logo.png" />
             <h2>St John’s CE<br />Primary School</h2>
         </div>
-
+        <a class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </a>
         <nav class="nav-bar">
-            <a class="active" href="#home">Home</a>
+            <a href="#home">Home</a>
+            <!-- DROPDOWN MENU -->
+           <ul class="dropdown">
+            <li><a href="/">Example page title </a></li>
+            <li><a href="/">Example page title </a></li>
+            <li><a href="/">Example page title </a></li>
+            <li><a href="/">Example page title </a></li>
+            <li><a href="/">Example page title </a></li>
+            <li><a href="/">Example page title </a></li>
+            <li><a href="/">Example page title </a></li>
+            <li><a href="/">Example page title </a></li>
+          </ul>
             <a href="#news">About us</a>
             <a href="#keyInfo">Key Information</a>
             <a href="#curriculum">Curriculum</a>
@@ -28,11 +41,8 @@
             <a class="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </a>
-
-            <a href="javascript:void(0);" class="bars" onclick="myFunction()">
-                <i class="fa-solid fa-bars"></i>
-            </a>
         </nav>
+        
     </header>
 
     <section class="slides">
@@ -40,13 +50,13 @@
             <h3>
                 Compassion, forgiveness, tolerance, trust
             </h3>
-            <img class="border" src="../src/assets/whiteborder.png" />
-            <button class="arrow">
+            <img class="border" src="./src/assets/whiteborder.png" />
+            <a href="#main" class="arrow">
                 <i class="fa-solid fa-arrow-down"></i>
-            </button>
+            </a>
         </div>
     </section>
-    <main>
+    <main id="main">
         <div class="hero">
             <img src="../src/assets/welcome.png">
             <div class="hero-content">
@@ -59,12 +69,12 @@
             </div>
         </div>
         <div class="leaves">
-            <img src="../src/assets/large-leaf.png" />
-            <img src="../src/assets/large-leaf.png" />
-            <img src="../src/assets/large-leaf.png" />
-            <img src="../src/assets/large-leaf.png" />
+            <img src="./src/assets/large-leaf.png" />
+            <img src="./src/assets/large-leaf.png" />
+            <img src="./src/assets/large-leaf.png" />
+            <img src="./src/assets/large-leaf.png" />
         </div>
-        <img class="border" src="../src/assets/bluecorder.png" />
+        <img class="border" src="./src/assets/bluecorder.png" />
 
         <div class="year-groups">
             <div>
@@ -86,14 +96,51 @@
             <button class="arrow">
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
-
         </div>
-        <img class="border flipped" src="../src/assets/bluecorder.png" />
+        <div class="map">
+            <img src="./src/assets/marker.png">
 
 
-        
+            <div class="map-content">
+                <h1>Get in touch</h1>
+                <div class="address">
+                    <img src="./src/assets/marker.png">
+                    <p>
+                        St Johns CE Primary School Bayham Road, Sevenoaks Kent, TN13 3XD
+                    </p>
+                </div>
+                <p>
+                    <span class="contact">T:</span> 01732 453944 <span class="contact">F:</span> 01732 740552<br> <span
+                        class="contact">E:</span> office@stjohnssevenoaks.co.uk
+                </p>
+            </div>
+        </div>
     </main>
 
+
+
+
+    <footer>
+        <img class="border" src="./src/assets/whiteborder.png">
+        <div>
+            <a>
+                © 2021 JOHNS CE PRIMARY SCHOOL
+            </a>
+            <a>
+                SCHOOL WEBSITE DESIGN BY E4EDUCATION
+            </a>
+            <a>
+                HIGH VISIBILITY VERSION
+            </a>
+            <a>
+                SITEMAP
+            </a>
+            <a>
+                PRIVACY POLICY
+            </a>
+        </div>
+        <h2>AWARD LOGOS</h2>
+    </footer>
 
 
 </body>
