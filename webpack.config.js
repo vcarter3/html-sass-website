@@ -5,7 +5,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: 'images/[hash][ext][query]'
+    assetModuleFilename: 'src/assets/[name][ext][query]'
   },
   module: {
     rules: [
