@@ -1,9 +1,9 @@
-# school-website
-One page Website (HTML Sass practice)
+# html-sass-website
+One page Website with nav bar
 
-## One page School website
+## One page website
 
-#### 🧪 [Live Demo](https://vcarter3.github.io/school-website/)
+#### 🧪 [Live Demo](https://vcarter3.github.io/html-sass-website/)
 
 
 #### 🔔  Features
